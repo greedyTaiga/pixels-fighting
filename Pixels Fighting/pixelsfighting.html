@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pixels Fighting</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Pixels Fighting Simulation">
+        <meta name="author" content="Rustam/Petra">
+
+        <script src="Please.js"></script>
+        <script src="pixelsfighting.js"></script>
+        <link rel = 'stylesheet' href = 'pixelsfighting.css'>
+    </head>
+    <body onload="Setup()">
+        <h1>PIXELS FIGHTING</h1>
+
+        <div><span id = 'vsSpan1'></span> vs <span id = 'vsSpan2'></span></div>
+
+        <button id = 'startButton' onclick="StartTheFight()">Start the fight</button>
+
+        <canvas height = '500' width='500' id = 'battlegroundCanvas'></canvas>
+
+
+
+        <div id="gameEndModal" class="modal">
+            
+            <div class="modal-content">
+              <p id = 'gameEndMessage'> <span id = 'winningColor'></span> is the winner.</p>
+              <span class="restart">Play Again</span>
+            </div>
+          
+        </div>
+
+    </body>
+</html>
